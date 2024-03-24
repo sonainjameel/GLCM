@@ -1,0 +1,9 @@
+load('Train_GLCM_Features')
+load('Test_GLCM_Features')
+load('Train_GLCM_Label')
+load('Test_GLCM_Label')
+SVMModel=fitcsvm(Train_GLCM_Features,Train_GLCM_Label);
+[label,score]=predict(SVMModel,Test_GLCM_Features);
+label=label';
+Test_GLCM_Label=Test_GLCM_Label';
+plotconfusion(label,Test_GLCM_Label)

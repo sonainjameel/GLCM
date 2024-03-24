@@ -1,0 +1,1 @@
+Copy the matlab file "assignUserInputs.m" and "GLCM_Feature.m" into your directory and Extract features like mentioned the demo file here
