@@ -23,18 +23,30 @@
 
 3. **Parameters**:
    - `num_levels`: Number of gray levels for quantization (default is 8).
-   - `offsets`: List of offsets for GLCM computation (default is `[0 1; -1 1; -1 0; -1 -1]` for 4 directions).
+   - `offsets`: List of offsets for GLCM computation (default is `[]`).
    - Additional parameters can be adjusted within the script based on specific requirements.
 
 ## Methodology
 
 🔍 GLCM is computed by considering the spatial relationship between pairs of pixels within an image.
+
 📊 The co-occurrence matrix is constructed by counting the frequency of pixel pairs with specific intensity values and spatial relationships.
+
 📈 Various statistical measures can be derived from the GLCM to represent texture features, including contrast, correlation, energy, and homogeneity.
+
 💻 The script computes these features and provides a comprehensive analysis of texture information within the input image.
 
 ## License
 📝 This code is provided under the MIT License.
+
+## Example
+```matlab
+% load image
+I= imread('image.png');
+
+% run descriptor
+Features = GLCM_Feature(I);
+```
 
 ## Author
 👤 Sonain Jamil
