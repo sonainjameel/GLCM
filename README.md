@@ -17,7 +17,7 @@
 2. **Usage**:
    - Place your input images in a directory accessible by MATLAB.
    - Open MATLAB and navigate to the directory containing the downloaded code.
-   - Run `GLCM_Feature_Extraction.m`.
+   - Run `demo.m`.
    - Follow the instructions within the script to specify the input image and required parameters.
    - The script will compute GLCM features for the provided image and display the results.
 
